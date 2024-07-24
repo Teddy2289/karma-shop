@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={`${roboto.className} block my-0 mx-auto max-w-7xl`}>
+        {children}
+      </body>
     </html>
   );
 }

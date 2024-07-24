@@ -62,8 +62,21 @@ const config: Config = {
         "80": "20rem",
         "96": "24rem",
       },
-      colors: {},
-      backgroundImage: {},
+
+      colors: {
+        primary: "#ffba00",
+        secondary: "#ff6c00",
+        teritiary: "#828bb3",
+        body: "#777777",
+        red: "#c5322d",
+        white: "#fff",
+        black: "#000",
+        offwhite: "#fcfcfc",
+        title: "#222222",
+      },
+      backgroundImage: {
+        gradiant: "linear-gradient(90deg, #ffba00 0%, #ff6c00 100%)",
+      },
     },
   },
   plugins: [],
