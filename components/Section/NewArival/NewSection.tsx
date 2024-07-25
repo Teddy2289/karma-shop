@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CardProduct } from "@/components/ui/Card";
 import { Product } from "@/types/product";
+import { SlideProductProps } from "@/types/ui/Slide";
 import React from "react";
 
 const product: Product[] = [
@@ -46,19 +47,19 @@ const product: Product[] = [
   },
 ];
 
-export default function NewSection() {
+export default function NewSection({
+  description,
+  products,
+  title,
+}: SlideProductProps) {
   return (
     <section className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="font-manrope font-bold text-4xl text-black mb-2 max-xl:text-center">
-            New Arrivals
+          <h2 className="font-manrope font-bold text-4xl text-black mb-2 max-xl:text-center capitalize">
+            {title}
           </h2>
-          <p className="w-1/2 mb-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            voluptate quo explicabo quod error, consectetur similique ut fugiat,
-            nam non eum ipsa id esse officia aliquam veritatis eos vitae rem.
-          </p>
+          <p className="w-1/2 mb-2 text-center">{description}</p>
         </div>
         <div className="mx-auto">
           <CardProduct products={product} classname="" />
