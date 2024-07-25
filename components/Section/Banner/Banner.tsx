@@ -6,12 +6,11 @@ import { P, Span, Title } from "../../ui/Typography";
 
 export const Banner = ({ description, images, name }: ProductBanner) => {
   return (
-    <div className="flex justify-between px-20 items-center">
+    <div className="flex justify-between px-20 py-20 items-center">
       <div className="flex flex-col gap-10 w-1/2">
         <Title
           level={1}
-          classname="text-6xl capitalize font-bold max-w-[300px] leading-tight"
-        >
+          classname="text-6xl capitalize font-bold max-w-[300px] leading-tight">
           {name}
         </Title>
         <P classname="max-w-[450px]">{description}</P>

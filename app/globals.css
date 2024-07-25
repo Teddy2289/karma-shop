@@ -3,7 +3,69 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Ajout des styles personnalisés pour les fonctionnalités */
+  .features-area {
+    @apply py-12; /* padding vertical */
+  }
+
+  @media (max-width: 768px) {
+    .features-area {
+      @apply pt-0; /* padding-top nul pour les écrans plus petits */
+    }
+  }
+
+  .features-inner {
+    @apply shadow-md py-10; /* ombre et padding vertical */
+  }
+
+  .single-features {
+    @apply text-center border-r border-gray-200; /* texte centré et bordure droite */
+
+    @media (max-width: 991px) {
+      .single-features {
+        @apply border-r-0 mb-8; /* suppression de la bordure droite et ajout de marge inférieure */
+      }
+    }
+  }
+
+  .single-features .f-icon {
+    @apply mb-5; /* marge inférieure pour l'icône */
+  }
+
+  .single-features .f-icon img {
+    @apply transition-opacity duration-300 ease-in-out; /* transition pour l'opacité */
+  }
+
+  .single-features:hover .f-icon img {
+    @apply opacity-50; /* opacité réduite au survol */
+  }
+
+  .single-features h6 {
+    @apply text-base font-semibold mb-0; /* taille de texte et poids du texte */
+  }
+
+  .single-features p {
+    @apply text-gray-600 mb-0; /* couleur du texte et marge inférieure nulle */
+  }
+
+  /* Suppression de la bordure droite pour le dernier élément */
+  .features-area .col-lg-3:last-child .single-features {
+    @apply border-r-0;
+  }
+
+  @media (max-width: 575px) {
+    .features-area .col-lg-3:last-child .single-features {
+      @apply mt-8; /* marge supérieure pour le dernier élément sur les petits écrans */
+    }
+  }
+
+  /* Suppression de la marge inférieure pour les troisième et quatrième éléments */
+  .features-area .col-lg-3:nth-child(3) .single-features,
+  .features-area .col-lg-3:nth-child(4) .single-features {
+    @apply mb-0;
+  }
+
   .text-balance {
-    text-wrap: balance;
+    text-wrap: balance; /* Style pour le texte équilibré */
   }
 }
