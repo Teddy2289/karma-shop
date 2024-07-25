@@ -12,7 +12,7 @@ interface CardProductProps {
 export const CardProduct = ({ products, classname }: CardProductProps) => {
   return (
     <div
-      className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 grid-rows-4 ${classname}`}>
+      className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 grid-rows-2 ${classname}`}>
       {products.map((product, index) => (
         <div key={index} className="flex flex-wrap flex-col gap-4 w-full mb-8">
           <div className="flex justify-center items-center bg-slate-200 h-[250px] p-8">

@@ -8,8 +8,8 @@ export default function Logo() {
         className="objet-cover w-full"
         src="/logo3.png"
         alt="logo"
-        width={90}
-        height={90}
+        width={60}
+        height={60}
       />
     </>
   );

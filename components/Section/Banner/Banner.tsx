@@ -6,7 +6,7 @@ import { P, Span, Title } from "../../ui/Typography";
 
 export const Banner = ({ description, images, name }: ProductBanner) => {
   return (
-    <div className="flex justify-between px-20 py-20 items-center">
+    <div className="flex justify-between px-20 py-20 items-center mb-10">
       <div className="flex flex-col gap-10 w-1/2">
         <Title
           level={1}

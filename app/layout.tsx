@@ -20,7 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} block my-0 mx-auto max-w-full`}>
+      <body
+        className={`${roboto.className} block my-0 mx-auto max-w-[1280px] relative`}>
         <NavBar />
         {children}
       </body>

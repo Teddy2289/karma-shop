@@ -48,7 +48,7 @@ const product: Product[] = [
 
 export default function NewSection() {
   return (
-    <section className="py-24">
+    <section className="">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-manrope font-bold text-4xl text-black mb-2 max-xl:text-center">

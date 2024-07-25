@@ -61,7 +61,7 @@ const DropdownMenu = () => {
     <div className="relative">
       <div className="text-white w-52 z-40">
         <div
-          className="p-4 border-b bg-gradiant gap-4 cursor-pointer flex rounded-lg justify-between items-center"
+          className="p-2 border-b bg-gradiant gap-4 cursor-pointer flex rounded-lg justify-between items-center"
           onClick={toggleAllCategories}>
           <span>Tous les catégories</span>
           <FaList className="text-lg" />
